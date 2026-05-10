@@ -30,6 +30,10 @@ Repository:
 
 https://github.com/RustShield-Security/rustshield-modbus
 
+Public release:
+
+https://github.com/RustShield-Security/rustshield-modbus/releases/tag/v0.1.0-lab-preview
+
 ## Focus Areas
 
 - Protocol-aware security gateways for cyber-physical systems.
