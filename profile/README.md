@@ -34,10 +34,25 @@ Public release:
 
 https://github.com/RustShield-Security/rustshield-modbus/releases/tag/v0.1.0-lab-preview
 
+### RustShield Auditor
+
+RustShield Auditor is a passive, local-first field evidence tool for early assessment of industrial and robotic networks.
+
+It reads offline PCAP/PCAPNG captures and synthetic lab fixtures, profiles Modbus TCP and MAVLink traffic at a conservative protocol level, and produces reproducible evidence packs with observed assets, risk findings, explicit limitations, and candidate RustShield gateway policies.
+
+Repository:
+
+https://github.com/RustShield-Security/rustshield-auditor
+
+Public release:
+
+https://github.com/RustShield-Security/rustshield-auditor/releases/tag/v0.1.0-lab-preview
+
 ## Focus Areas
 
 - Protocol-aware security gateways for cyber-physical systems.
 - Stateful semantic command policy for high-risk operations.
+- Passive offline traffic analysis and reproducible evidence capture.
 - MAVLink UAV and robotics laboratory validation.
 - Modbus TCP OT/ICS laboratory simulation.
 - Fail-safe handling for unknown, stale, malformed, or unsupported states.
@@ -51,7 +66,10 @@ https://github.com/RustShield-Security/rustshield-modbus/releases/tag/v0.1.0-lab
 - No real UAV, PLC, plant network, radio, or hardware validation in the public previews.
 - No complete coverage of MAVLink, Modbus, or all cyber-physical attack paths.
 - No cryptographic authentication claim for the Modbus TCP PoC.
+- No MAVLink signing validation in the auditor: signing presence is observed and reported, not cryptographically verified.
+- No physical process semantics from traffic alone: Modbus register and coil meaning requires operator-provided context.
 - No replacement for autopilot hardening, PLC/SCADA hardening, key management, network segmentation, access control, or OT risk governance.
+- No replacement for professional security audit or OT risk management.
 
 ## Commercial / Lab Pilots
 
